@@ -1,0 +1,91 @@
+.header {
+    height: 76vh;
+    font-family: 'Montserrat';
+    background: #444;
+    font-weight: bold;
+    
+
+
+    &__overlay{
+        background-color: $color-primary;
+        opacity: $background-opacity;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    &__text-box {
+        
+        text-align: center;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        
+    }
+
+    &__heading-primary{
+        color: #fff;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__icons{
+        position: absolute;
+        top: 59%;
+        left: 50%;
+        
+        transform: translate(-50%, -50%);
+        list-style: none;
+        a {
+            padding: 1.2rem;
+            color: #fff;
+            text-decoration: none;
+            &:hover {
+            color: $color-secondary;
+            @include ease-out();
+            }
+        }
+    }
+
+    &__background{
+        width: 100%;
+        height: 700px;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    &__button {
+        position: absolute;
+        top: 74%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        font-size: $default-font-size;
+
+        background-color: $color-secondary;
+        color: $color-grey-dark;
+    }
+    &__button:hover {
+        background-color: $color-secondary;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.21);
+       
+    }
+    &__button:active {
+        box-shadow: 0 0.5rem 1rem rgba($color-black, 0.21);
+        transform: translateY(0px);
+    }
+    
+    
+}
