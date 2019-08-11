@@ -30,14 +30,14 @@
     &__heading-primary{
         color: #fff;
         position: absolute;
-        top: 35%;
+        top: 45%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 
     &__icons{
         position: absolute;
-        top: 59%;
+        top: 70%;
         left: 50%;
         
         transform: translate(-50%, -50%);
@@ -62,7 +62,7 @@
 
     &__button {
         position: absolute;
-        top: 74%;
+        top: 85%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-transform: uppercase;
@@ -84,7 +84,7 @@
     }
     &__button:active {
         box-shadow: 0 0.5rem 1rem rgba($color-black, 0.21);
-        transform: translateY(0px);
+        //transform: translateY(0px);
     }
     
     

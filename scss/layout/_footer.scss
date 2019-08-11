@@ -7,19 +7,12 @@
         padding: 8rem 0;
     }
 
-    &__logo-box {
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-
-    
-
     &__navigation {
         border-top: 1px solid #f1f1f1;
         padding-top: 2rem;
         display: inline-block;
 
-        @include respond(tab-port) {
+        @include respond(tab-port) {    
             width: 100%;
             text-align: center;
         }
@@ -50,7 +43,7 @@
 
         
     }
-    &__copyright {
+    &__siteby {
         border-top: 1px solid #f1f1f1;
         padding-top: 2rem;
         float: right;
